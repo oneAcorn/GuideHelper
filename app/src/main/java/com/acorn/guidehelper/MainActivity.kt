@@ -62,5 +62,13 @@ class MainActivity : AppCompatActivity() {
                 .build()
                 .show()
         }
+
+        btn5.setOnClickListener {
+            GuideHelper.with(this)
+                .backLayerColor(Color.argb(120, 0, 0, 0))
+                .layoutResId(R.layout.view_guide1)
+                .build()
+                .show()
+        }
     }
 }

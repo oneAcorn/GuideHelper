@@ -66,7 +66,7 @@ class GuideHelper(builder: Builder) {
 
         if (null == beGuideView || beGuideView.visibility == View.GONE || viewWidth == 0 || viewHeight == 0) {
             guideDrawable = GuideDrawable(backLayerColor).apply {
-                setBounds(0, 0, decorView?.width ?: 0, decorView?.height ?: 0)
+                setBounds(0, getStatusHeight(activity!!), decorView?.width ?: 0, decorView?.height ?: 0)
             }
         } else {
             val location = IntArray(2)
