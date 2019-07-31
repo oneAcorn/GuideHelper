@@ -10,9 +10,34 @@
 
     <Button
             android:id="@+id/btn1"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:text="矩形"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+    <Button
+            android:id="@+id/btn2"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="200dp"
+            android:text="圆形"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+            android:id="@+id/btn3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="400dp"
+            android:text="椭圆形"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/btn4"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="300dp"
+            android:text="圆形负padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 </RelativeLayout>
