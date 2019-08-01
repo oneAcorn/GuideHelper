@@ -1,11 +1,8 @@
 package com.acorn.guidehelper
 
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.constraint.ConstraintLayout
-import android.view.ViewGroup
-import android.widget.LinearLayout
+import android.support.v7.app.AppCompatActivity
 import com.acorn.guidehelper.library.GuideHelper
 import kotlinx.android.synthetic.main.activity_main.*
 

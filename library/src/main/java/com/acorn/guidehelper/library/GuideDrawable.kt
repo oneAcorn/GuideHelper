@@ -11,7 +11,7 @@ class GuideDrawable(
     private val drawHighLightCallback: ((Canvas,Paint) -> Unit)? = null
 ) :
     Drawable() {
-    private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+    private val backLayerPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         style = Paint.Style.FILL
         color = backLayerColor
     }
@@ -19,7 +19,7 @@ class GuideDrawable(
 
 
     override fun draw(canvas: Canvas) {
-        with(paint) {
+        with(backLayerPaint) {
             color = backLayerColor
             xfermode = null
             canvas.drawPaint(this)
