@@ -12,43 +12,21 @@
             android:layout_height="10dp"
             />
 
-    <View
-            android:id="@+id/view1"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            app:layout_constraintTop_toTopOf="@id/fakeView"
-            app:layout_constraintStart_toEndOf="@id/fakeView"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:background="#156493"
-            />
 
-    <View
-            android:id="@+id/view2"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            app:layout_constraintTop_toBottomOf="@id/view1"
-            app:layout_constraintLeft_toRightOf="@id/view1"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:background="#7FCF2E"
-            />
-
-    <View
-            android:id="@+id/view3"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            app:layout_constraintTop_toBottomOf="@id/view2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="40dp"
-            android:background="#B46B32"
-            />
-
-    <View
-            android:layout_width="1dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_height="1dp"
-            />
+    <ImageView
+            android:id="@+id/guideIv"
+            android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/guide"
+               app:layout_constraintStart_toEndOf="@id/fakeView"
+               app:layout_constraintTop_toBottomOf="@id/fakeView"
+    />
+   <Button android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/guideIv"
+           android:layout_marginTop="20dp"
+           app:layout_constraintStart_toStartOf="@id/guideIv"
+           app:layout_constraintEnd_toEndOf="@id/guideIv"
+           android:text="确定"
+   />
 </android.support.constraint.ConstraintLayout>
