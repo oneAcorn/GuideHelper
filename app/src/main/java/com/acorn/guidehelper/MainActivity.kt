@@ -13,15 +13,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btn1.setOnClickListener {
             GuideHelper.with(this)
-                .backLayerColor(Color.argb(120, 144, 120, 60))
-                .beGuideView(btn1)
-                .shape(GuideHelper.SHAPE_RECT)
-                .paddingTop(5)
+                .backLayerColor(Color.argb(120, 144, 120, 60)) //蒙层颜色
+                .beGuideView(btn1) //被引导的View
+                .shape(GuideHelper.SHAPE_RECT) //高亮区域形状
+                .paddingTop(5) //高亮区域的padding
                 .paddingBottom(5)
                 .paddingRight(10)
                 .paddingLeft(10)
-                .layoutResId(R.layout.view_guide1)
-                .fakeBeGuideViewResId(R.id.fakeView)
+                .layoutResId(R.layout.view_guide1) //自己的引导布局
+                .fakeBeGuideViewResId(R.id.fakeView) //自己的引导布局中的被引导的View的替代
                 .build()
                 .show()
         }
