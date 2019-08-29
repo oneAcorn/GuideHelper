@@ -79,3 +79,4 @@ dependencies {
                 .build()
                 .show()
 ```
+注意在fakeBeGuideViewResId()方法中传递的R.id.fakeView就是在R.layout.view_guide1你的蒙层布局中代表被引导View的那个View的ID
